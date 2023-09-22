@@ -1,0 +1,122 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Overview": {
+    "message": "Overview",
+    "description": "The label for category Overview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Administration guide": {
+    "message": "Administration guide",
+    "description": "The label for category Administration guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.install": {
+    "message": "install",
+    "description": "The label for category install in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Installation": {
+    "message": "Installation",
+    "description": "The label for category Installation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.admin_guide": {
+    "message": "admin_guide",
+    "description": "The label for category admin_guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Users and the SSO": {
+    "message": "Users and the SSO",
+    "description": "The label for category Users and the SSO in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Domains": {
+    "message": "Domains",
+    "description": "The label for category Domains in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Upgrades": {
+    "message": "Upgrades",
+    "description": "The label for category Upgrades in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.backups": {
+    "message": "backups",
+    "description": "The label for category backups in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.backup_methods": {
+    "message": "backup_methods",
+    "description": "The label for category backup_methods in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.domains": {
+    "message": "domains",
+    "description": "The label for category domains in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "The label for category Troubleshooting in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.providers": {
+    "message": "providers",
+    "description": "The label for category providers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Registrar": {
+    "message": "Registrar",
+    "description": "The label for category Registrar in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.gandi": {
+    "message": "gandi",
+    "description": "The label for category gandi in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ovh": {
+    "message": "ovh",
+    "description": "The label for category ovh in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.VPN providers": {
+    "message": "VPN providers",
+    "description": "The label for category VPN providers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.User guide": {
+    "message": "User guide",
+    "description": "The label for category User guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.applications": {
+    "message": "applications",
+    "description": "The label for category applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.docs": {
+    "message": "docs",
+    "description": "The label for category docs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Application bundles": {
+    "message": "Application bundles",
+    "description": "The label for category Application bundles in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Community": {
+    "message": "Community",
+    "description": "The label for category Community in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.contribute": {
+    "message": "contribute",
+    "description": "The label for category contribute in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Write documentation": {
+    "message": "Write documentation",
+    "description": "The label for category Write documentation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Introduction to packaging": {
+    "message": "Introduction to packaging",
+    "description": "The label for category Introduction to packaging in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.advanced": {
+    "message": "advanced",
+    "description": "The label for category advanced in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.resources": {
+    "message": "resources",
+    "description": "The label for category resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing to the YunoHost core": {
+    "message": "Contributing to the YunoHost core",
+    "description": "The label for category Contributing to the YunoHost core in sidebar tutorialSidebar"
+  }
+}
