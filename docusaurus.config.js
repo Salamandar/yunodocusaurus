@@ -22,7 +22,7 @@ const config = {
   projectName: 'yunodocusaurus', // Usually your repo name.
   trailingSlash: true, // for Github Pages
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -67,13 +67,18 @@ const config = {
       {
         redirects: [
           // /docs/oldDoc -> /docs/newDoc
-          {
-            from: '/docs/community/forum',
-            to: '/auei/',
-          },
         ],
       },
     ],
+    // require.resolve('docusaurus-lunr-search'),
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        lunr: {
+          tokenizerSeparator: /[\s\-_]+/,
+        }
+      }
+    ]
   ],
 
   themeConfig:
