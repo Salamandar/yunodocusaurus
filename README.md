@@ -1,39 +1,49 @@
 # YunoHost Documentation
 
-* [Web Site](https://yunohost.org)
-* Based on [Grav](https://getgrav.org/)
+This repository contains the code for [the YunoHost documentation](https://yunohost.org).
 
-Please report [issues on YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
+It is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-# Contributing
+Please report issues on [the YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
 
-This repo use a **submodule** to provide the theme. So when you clone use: 
-
-```shell
-git clone --recursive https://github.com/YunoHost/doc.git
-```
-
-
-You can refer to the page on [writing documentation](https://yunohost.org/write_documentation).
-
-If you know docker, you can run:
-
-```
-docker-compose up
-```
-
-## Regenerate the CSS
-
-We use scss to manage the CSS. If you want to change it, you must rebuild it.
-
-First install npm, then in the root folder of this repo, install sass: `npm install sass`
-
-Finally you can rebuild the CSS with (You can replace `expanded` by `compressed` if you want):
+## Installation
 
 ```bash
-./node_modules/sass/sass.js themes/yunohost-docs/scss:themes/yunohost-docs/css --style expanded
+$ yarn
 ```
 
-Source:
-https://sass-lang.com/guide
+## Local Development
 
+```bash
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## Contributing
+
+You can refer to the page on [writing documentation](https://yunohost.org/write_documentation).
