@@ -14,9 +14,8 @@ Building on this high performance platform means fast and dependable performance
 
 ### Screenshots
 
-![Screenshot of NodeBB](## Screenshots
-
-![Screenshot of NodeBB](./doc/screenshots/screenshot.png))
+FIXME: Missing screenshot
+<!-- ![Screenshot of NodeBB](./doc/screenshots/screenshot.png) -->
 
 ## Useful links
 

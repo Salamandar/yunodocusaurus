@@ -13,7 +13,8 @@ routes:
 
 ### Screenshots
 
-![Screenshot of Mailman3](./doc/screenshots/screenshot1.webp)
+FIXME: Missing screenshot
+<!-- ![Screenshot of Mailman3](./doc/screenshots/screenshot1.webp) -->
 
 ### Disclaimers / important information
 
