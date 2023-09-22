@@ -22,7 +22,7 @@ sidebar_position: 1
 
 ## Developer doc
 
-<Button>Here is a button</Button>
+<!-- <Button>Here is a button</Button> -->
 
 <!-- 
 [center]
