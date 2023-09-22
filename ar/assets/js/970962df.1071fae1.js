@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyunohost_docs=self.webpackChunkyunohost_docs||[]).push([[2354],{25207:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/yunodocusaurus/ar/blog/tags/docusaurus","allTagsPath":"/yunodocusaurus/ar/blog/tags","count":4}')}}]);

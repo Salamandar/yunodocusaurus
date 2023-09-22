@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyunohost_docs=self.webpackChunkyunohost_docs||[]).push([[4923],{47495:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/yunodocusaurus/ca/blog/tags/hola","allTagsPath":"/yunodocusaurus/ca/blog/tags","count":1}')}}]);

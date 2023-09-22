@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkyunohost_docs=self.webpackChunkyunohost_docs||[]).push([[4450],{7154:o=>{o.exports=JSON.parse('{"label":"facebook","permalink":"/yunodocusaurus/blog/tags/facebook","allTagsPath":"/yunodocusaurus/blog/tags","count":1}')}}]);
