@@ -1,0 +1,20 @@
+---
+title: Forum
+---
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+
+export const Stuff = () => {
+    if (!ExecutionEnvironment.canUseDOM) {
+        return null;
+    }
+    console.log("forum!");
+    return {
+        onRouteUpdate({ location }) {
+            console.log("location", location, "document", document.title);
+        },
+    };
+}
+
+<Stuff />
