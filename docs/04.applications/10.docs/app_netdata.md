@@ -142,7 +142,7 @@ This is a list of what it currently monitors:
 - **Linux DDoS protection**<br/>
   SYNPROXY metrics
 
-- **fping** latencies</br>
+- **fping** latencies<br/>
   for any number of hosts, showing latency, packets and packet loss
 
    ![image](https://cloud.githubusercontent.com/assets/2662304/20464811/9517d2b4-af57-11e6-8361-f6cc57541cd7.png)
