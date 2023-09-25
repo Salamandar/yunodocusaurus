@@ -30,3 +30,14 @@ export function HighlightAppInstall() {
 export function HighlightDiagnosis() {
     return <Highlight no_break={true} color="darkgreen"><FontAwesomeIcon icon={["fa", "stethoscope"]}/> Diagnosis</Highlight>;
 }
+
+export function HighlightFFDN() {
+    return <Highlight no_break={true} color="#3a87ad">FFDN</Highlight>;
+}
+export function HighlightNonProfit() {
+    return <Highlight no_break={true} color="#32b643">Non Profit</Highlight>;
+}
+
+export function HighlightCHATONS() {
+    return <Highlight no_break={true} color="#f0980c">CHATONS</Highlight>;
+}

@@ -1,5 +1,7 @@
 ---
-title: Registrar
+title: Registrars
+sidebar_custom_props:
+    description: The guys that provide the domain name
 template: docs
 taxonomy:
     category: docs
@@ -22,9 +24,8 @@ Not all registrars are supported. So far, the community tested and validated the
 
 The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
 
-
-| Registrar | Compatibility | Easy to obtain an API key | Howto |
-| --------- | ------------- | ------------------ |
-| [Gandi](https://www.gandi.net)     | ✔ (tested)    | ✔ |  [Obtain an API key](/providers/registrar/gandi/autodns)                |
-| [OVH](https://www.ovh.com/domaines/)       | ✔ (tested)    | ✘ | [Obtain an API key](/providers/registrar/ovh/autodns) <br> [Configure manually](/providers/registrar/ovh/manualdns) |
-| [Namecheap](https://www.namecheap.com/) | ✘ (in lexicon but untested)    | ✘✘✘ API not available without 50$ on the account  | |
+| Registrar                           | Compatibility               | Easy to obtain an API key | Howto |
+|-------------------------------------|-----------------------------|---------------------------|-------|
+| [Gandi](https://gandi.net)          | ✔ (tested)                  | ✔                         | [Obtain an API key](/providers/registrar/gandi/autodns) |
+| [OVH](https://ovh.com/domaines/)    | ✔ (tested)                  | ✘                         | [Obtain an API key](/providers/registrar/ovh/autodns) <br/> [Configure manually](/providers/registrar/ovh/manualdns) |
+| [Namecheap](https://namecheap.com/) | ✘ (in lexicon but untested) | ✘✘✘ API not available without 50$ on the account |  |
