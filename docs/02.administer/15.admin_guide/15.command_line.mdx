@@ -11,6 +11,9 @@ page-toc:
   active: true
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## What's SSH?
 
 **SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).
@@ -20,29 +23,33 @@ The command line interface (CLI) is, in the computer world, the original (and mo
 ## How to connect
 ### Login credentials
 
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Before running the initial configuration (post-installation)"]
+<Tabs>
+<TabItem value="before-postinstall" label="Before running the initial configuration (post-installation)" default>
 
 - If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)
 - If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
 
-[/ui-tab]
-[ui-tab title="After"]
+</TabItem>
+<TabItem value="after-postinstall" label="After running the post-installation" default>
+
 
 During the postinstall, you've been asked to choose an administration password. This password becomes the new password for the `root` and `admin` users. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the `admin` user !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
 
-!!! If you connected as `admin` and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
-[/ui-tab]
-[/ui-tabs]
+:::tip
+If you connected as `admin` and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
+:::
+
+</TabItem>
+</Tabs>
+
 
 ### Address to use
 
 If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):
-   - you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network). 
-   - if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/finding_the_local_ip).
-   - if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
+- you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network). 
+- if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/finding_the_local_ip).
+- if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
 If your server is a remote server (VPS), your provider should have communicated you the IP address of the machine
 
@@ -70,7 +77,9 @@ ssh admin@yunohost.local
 ssh -p 2244 admin@votre.domaine.tld
 ```
 
-N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
+:::note
+`fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
+:::
 
 ## Which other users may connect to the server?
 
@@ -78,18 +87,24 @@ By default, only the `admin` user can log in to YunoHost SSH server.
 
 YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. Via the permissions system it is possible to allow the connection in SFTP or if it is really necessary in SSH. 
 
-! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
+:::caution
+Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
+:::
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+<Tabs>
+<TabItem value="web" label="From the web interface">
+
 Go to `Users > Manage groups and permissions`.
 
 From here, you can add SFTP or SSH permissions to any user or group.
 
 If you want to add an SSH public key to the user, you have to do it from the command line, as the web interface does not yet offer this feature.
-[/ui-tab]
-[ui-tab title="From the command line"]
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
 To allow a user or group to access via SFTP or SSH:
+
 ```bash
 # SFTP
 yunohost user permission add sftp <username>
@@ -98,6 +113,7 @@ yunohost user permission add ssh <username>
 ```
 
 To remove permission:
+
 ```bash
 # SFTP
 yunohost user permission remove sftp <username>
@@ -106,14 +122,15 @@ yunohost user permission remove ssh <username>
 ```
 
 Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:
+
 ```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
 ```
-[/ui-tab]
-[/ui-tabs]
 
+</TabItem>
+</Tabs>
 
 ## Security and SSH
 
@@ -121,7 +138,9 @@ A more extensive discussion about security & SSH can be found on the [dedicated 
 
 ## The command line
 
-!!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+:::info
+Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+:::
 
 ### The `yunohost` command
 
