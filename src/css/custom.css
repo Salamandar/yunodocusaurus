@@ -38,3 +38,14 @@
 [data-theme='dark'] img.gh-light-mode-only {
   display: none;
 }
+
+[data-theme='dark'] #ynhlogo {
+  filter: invert(1);
+}
+[data-theme='light'] img#whitelogo {
+  background-color: darkgray;
+}
+
+[data-theme='dark'] img#darklogo {
+  background-color: lightgray;
+}

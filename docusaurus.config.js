@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Yunohost',
   tagline: 'Why you no host?',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://yunohost.org/',
@@ -87,23 +87,28 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Yunohost documentation',
+        title: 'Docs',
+        hideOnScroll: true,
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Yunohost Logo',
           src: 'img/YunoHost_logo_vertical.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          {to: '/docs', label: 'Docs', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/yunohost/doc',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: "search",
+            position: "right"
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+
           },
           {
             type: 'localeDropdown',
